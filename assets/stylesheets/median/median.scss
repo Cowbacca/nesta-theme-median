@@ -86,7 +86,9 @@ pre > code {
 nav {
   font-family: 'Noto Sans', sans-serif;
   font-size: 14px;
-  margin-bottom: 0px;
+  .navbar {
+    margin-bottom: 0px;
+  }
   
   .dashery {
     font-family: 'Merriweather', serif;
