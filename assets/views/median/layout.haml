@@ -10,6 +10,6 @@
     - if @page && @page.canonical_url
       %link{ rel:"canonical", href: @page.canonical_url }
   %body
-    .container-not
+    .container-content-focus
       = yield
     = haml :footer_scripts, layout: false
