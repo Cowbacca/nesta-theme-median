@@ -84,6 +84,18 @@ pre > code {
 }
 
 nav {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  
+  .dashery {
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+  }
+
+  .logo {
+    font-size: 500%;
+  }
+  
   .container {
     margin-bottom: 0;
   }
