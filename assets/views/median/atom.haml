@@ -20,7 +20,8 @@
     %entry
       %title= article.heading
       %link{ :href => path_to(article.path, :uri => true), :type => 'text/html', :rel => 'alternate' }
-      %link{ :href => article.intro_image, :type => 'image', :rel => 'image' }
+      - if article.intro_image
+        %link{ :href => article.intro_image, :type => 'image', :rel => 'image' }
       %id= atom_id(article)
       %content(type='html')&= find_and_preserve(absolute_urls(article.body(self)))
       %published= article.date(:xmlschema)
