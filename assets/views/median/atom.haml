@@ -5,7 +5,6 @@
   %id= atom_id
   %link(href="#{path_to('/articles.xml', :uri => true)}" rel='self')
   %link(href="#{path_to('/', :uri => true)}" rel='alternate')
-  %link(href="#{@page.intro_image}" rel='image')
   %subtitle(type='text')= @subtitle
   - if @articles[0]
     %updated= @articles[0].date(:xmlschema)
