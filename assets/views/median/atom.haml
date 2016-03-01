@@ -23,6 +23,8 @@
       - if article.intro_image
         %link{ :href => article.intro_image, :type => 'image', :rel => 'image' }
       %id= atom_id(article)
+      - if article.summary
+        %summary= article.summary
       %content(type='html')&= find_and_preserve(absolute_urls(article.body(self)))
       %published= article.date(:xmlschema)
       %updated= article.date(:xmlschema)
